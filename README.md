@@ -6,7 +6,7 @@ Reloj Digital Empleando Teclado Matricial y Display de Cristal Líquido
 
 Diciembre 15, 2021
 
-###Introducción
+### Introducción
 
 En esta práactica de laboratorio, el objetivo principal serpa el desarrollo de un par de controladores o drivers para el manejo tanto de un teclado matricial como de un display de cristal líquido (LCD), empleando las entradas y salidas de propósito general (GPIO) y el módulo de TIMER disponibles en el MCU RP2040 del sistema de desarrollo Raspberry Pi Pico.
 
@@ -18,9 +18,7 @@ El esquema del sistema a implementar se muestra en la Fig. 1.
 
 ![](https://i.ibb.co/6rWKk3v/Aspose-Words-08b779c8-53a2-4a54-9156-d1203e8c79dd-002.png "Fig. 1: Esquema del sistema a diseñar")
 
-Fig. 1: Esquema del sistema a diseñar
-
-###Consideraciones
+### Consideraciones
 
 Las consideraciones para el desarrollo de los drivers para el teclado y el LCD se muestran a continuación:
 
@@ -38,7 +36,7 @@ Las consideraciones para el desarrollo del reloj digital con alarma se muestran 
 1) Visualizará la fecha y hora actual (Ej. Diciembre 15 de 2021, 3PM) en el display de cristal líquido.
 2) Activará una sen˜al sonora o luminosa cuando la fecha y hora de la alarma coincida con la fecha y hora actual. La señal de alarma se desactivaría transcurridos 60 segundos o cuando el usuario presione una tecla específica.
 
-###Consideraciones generales:
+### Consideraciones generales:
 
 1. La programación se deberá realizar empleando el SDK de C/C++ para la Raspberry Pi Pico y librerías propias. Es mandatorio utilizar los módulos TIMER, GPIO y RTC para el desarrollo de la aplicación, en el cual se haga uso de interrupciones (trate de evitar el uso de la función sleep us a menos que no encuentre otra solución). El módulo UART puede ser empleado a través de las funciones de la librería de entrada y salida estándar STDIO (printf, getchar, etc.) para la realización de pruebas de verificación.
 2. Haga uso de programación con metodología de eventos (interrupciones + polling).
