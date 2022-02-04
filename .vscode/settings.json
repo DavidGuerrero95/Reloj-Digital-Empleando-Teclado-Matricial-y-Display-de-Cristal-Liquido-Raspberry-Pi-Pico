@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "timer.h": "c",
+        "events.h": "c",
+        "gpio.h": "c"
+    }
+}
